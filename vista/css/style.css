@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /*margin: 0;*/
+    /*padding: 20px;*/
+    background-color: #f4f4f4;
+}
+
+h1,h2 {
+    text-align: center;
+    color: #333;
+}
+
+.hforms{
+    margin-bottom: 20px;
+}
+
+
+.centrado{
+    text-align: center;
+}
+
+.formulario {
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 60%;
+    margin: auto;
+    height: 600px;
+
+}
+
+.dosColumnas{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.unaColumna{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.formulario > div {
+    flex-basis: 48%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], select, input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, .25);
+}
+
+.enviarBoton{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.boton{
+    padding: 15px;
+    background-color: #00A6ED;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+}
+
+.botonDesactivado{
+    padding: 15px;
+    background-color: #d2d2d2;
+    color: black;
+    cursor: none;
+}
+
+.error{
+    color: darkred;
+}
+
+@media (max-width: 768px) {
+    .formulario > div {
+        flex-basis: 100%;
+    }
+    .formulario,.enviarBoton{
+        width: 95%;
+        height: auto;
+    }
+}
+
+/*ESTILO HEADER*/
+
+a{
+    text-decoration: none;
+}
+
+.galeria {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: url("../img/Centro de Adultos9506.jpg");
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.margin-top-100 {
+    margin-top: 100px;
+}
+
+.cajaBlanca {
+    height: 400px;
+    width: 60vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2ab;
+}
+
+
+.botones {
+    padding: 25px;
+}
+
+.cajaTexto{
+    align-items: center;
+}
+
+.informacion-seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #f3f4f6; /* Color de fondo suave */
+    color: #333; /* Color de texto */
+    margin-top: 20px;
+}
+
+.informacion-seccion h3 {
+    font-size: 2.5rem; /* Tamaño de fuente grande para resaltar */
+    color: #00A6ED; /* Color llamativo para el título */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #00A6ED; /* Línea inferior para destacar */
+    padding-bottom: 10px;
+}
+
+
+.informacion-seccion p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px; /* Limitar el ancho del texto para mejor legibilidad */
+    margin: 10px 0;
+    color: #555; /* Color de texto ligeramente más suave */
+}
+
+
+/* Estilo de la cabecera */
+
+#nav{
+    margin: 0;
+    padding-left: 0px;
+    background-color: #00A6ED;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#nav a{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 20px;
+}
+
+#nav a:hover{
+    color: #0050aa;
+}
+
+#navLetras{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 50px;
+    gap: 4em;
+}
+
+.container{
+    padding-top: 25px;
+}
