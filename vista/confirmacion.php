@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (empty($_SESSION['nombreCompleto'])) {
+if (empty($_SESSION['datosCompletos'])) {
     header('Location: formulario1.php?errores=Debe completar ambos formularios');
     exit();
 }
